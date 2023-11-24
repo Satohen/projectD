@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sXi6SqGxlk815a17vwxvbWqg/J9b1VDw7buwBpMirl9XImFf9DqiEWiF5PoxwnPfBl1ahRsuNeQc+FaAHNdw2A==",
+  "success": true,
+  "projectFilePath": "/home/cys/mnt/m2ssd/backup/learning/DiscountPractice/discount/discount.csproj",
+  "expectedPackageFiles": [
+    "/home/cys/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

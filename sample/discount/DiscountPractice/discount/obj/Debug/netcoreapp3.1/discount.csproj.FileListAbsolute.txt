@@ -1,0 +1,15 @@
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.csprojAssemblyReference.cache
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.csproj.CoreCompileInputs.cache
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.AssemblyInfoInputs.cache
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.AssemblyInfo.cs
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\discount.exe
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\discount.deps.json
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\discount.runtimeconfig.json
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\discount.runtimeconfig.dev.json
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\discount.dll
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\discount.pdb
+D:\SourceCode\DiscountPractice\discount\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.csproj.CopyComplete
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.dll
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.pdb
+D:\SourceCode\DiscountPractice\discount\obj\Debug\netcoreapp3.1\discount.genruntimeconfig.cache
