@@ -1,0 +1,32 @@
+#<docs>:(請簡述此次變更文件)</docs>
+
+#<Body>
+
+#<Footer>
+#
+# docs： 在只修改文件的情況下使用
+#<how to write a good commit message>
+# ---    begin    ---
+# commit log 請遵循以下格式
+# <type>:(<Subject>)</type> {必要}
+# > 根據標籤分類，選擇相對應的標籤，以利日後進行統計
+# > 概述此提交會影響的範圍、功能、環境，以15個中文字說明
+# > 專用術語、功能名稱為英文除外，主要以中文呈現，盡量以被動語態動詞+名詞說明
+# 
+# <Body> {非必要}
+# > 該簽入範圍可於Subject一句話表達時，Body不需額外說明
+# > 具體的修改訊息，填寫完整來龍去脈，減少審核人員覆核時間
+# > 請詳細說明:why what how，幾個問題對應幾個解決方案
+#
+# <footer> {非必要}
+# > 其他連結：文件、其他相關文件
+# > 如果是要關閉特定 Issue 或 Bug. 填寫 Closes <Issue/Bug id>
+# > 具體參考 https://docs.gitlab.com/ee/user/project/integrations/jira.html
+# 
+# 範例
+# <docs>:(新增20220101會議記錄)</docs>
+#
+# 討論資訊安全控制項現有符合/未符合的部份
+# 討論上週完成事項，預定發佈版本
+# 
+# 詳見/docs/meeting/20220101.md
