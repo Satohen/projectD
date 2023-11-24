@@ -1,0 +1,50 @@
+#<fix>:(請簡述此次變更範圍、功能、環境等)</fix>
+
+#<Body>
+
+#<Footer>
+# colses issue id:xxxxx
+#
+#fix: 修改錯誤
+#<how to write a good commit message>
+# ---    begin    ---
+# commit log 請遵循以下格式
+# <type>:(<Subject>)</type> {必要}
+# > 根據標籤分類，選擇相對應的標籤，以利日後進行統計
+# > 概述此提交會影響的範圍、功能、環境，以15個中文字說明
+# > 專用術語、功能名稱為英文除外，主要以中文呈現，盡量以被動語態動詞+名詞說明
+# 
+# <Body> {非必要}
+# > 該簽入範圍可於Subject一句話表達時，Body不需額外說明
+# > 具體的修改訊息，填寫完整來龍去脈，減少審核人員覆核時間
+# > 請詳細說明:why what how，幾個問題對應幾個解決方案
+#
+# <footer> {非必要}
+# > 其他連結：文件、其他相關文件
+# > 如果是要關閉特定 Issue 或 Bug. 填寫 Closes <Issue/Bug id>
+# > 具體參考 https://docs.gitlab.com/ee/user/project/integrations/jira.html
+#
+#- 以下為範例
+#
+#<fix>:(登入機制修改成功時，錯誤次數歸零)</fix>
+#
+#背景
+#因錯誤次數為累計次數達3次立即關閉，但當下第一次失敗後，有可能第二次就立即成功
+#過一段時間後又輸入錯誤依此循環達3次以上鎖定，造成使用者在未知情況下突然鎖定的印象
+#
+#問題：登入密碼輸入錯誤達3次以上立即鎖定，但成功不歸零
+#
+#解決方案：
+#使用者於短時間內連續錯誤3次，立即鎖定帳號
+#在未達3次錯誤前，任一次登入成功後，錯誤次數即歸零
+#
+#詳細作法
+#ISysUserService新增 bool ClearErrorTimes(string userId)
+#SysUserService實作使用者有資料時，ErrorTimes=0
+#修改AccountController的Login動作，當user不為空，執行ClearErrorTimes，將錯誤次數歸零
+#
+#20220113會議記錄
+#詳細參照 ulist/doc/meeting/20220113.md
+# Closes 問題四
+#
+#---    end    ---

@@ -1,0 +1,52 @@
+#<refactor>:(請簡述此次變更範圍、功能、環境等)</refactor>
+
+#<Body>
+
+#<Footer>
+#
+#refactor： 修改後仍保持原有功能，僅變更程式結或改變寫法
+#<how to write a good commit message>
+# ---    begin    ---
+# commit log 請遵循以下格式
+# <type>:(<Subject>)</type> {必要}
+# > 根據標籤分類，選擇相對應的標籤，以利日後進行統計
+# > 概述此提交會影響的範圍、功能、環境，以15個中文字說明
+# > 專用術語、功能名稱為英文除外，主要以中文呈現，盡量以被動語態動詞+名詞說明
+# 
+# <Body> {非必要}
+# > 該簽入範圍可於Subject一句話表達時，Body不需額外說明
+# > 具體的修改訊息，填寫完整來龍去脈，減少審核人員覆核時間
+# > 請詳細說明:why what how，幾個問題對應幾個解決方案
+#
+# <footer> {非必要}
+# > 其他連結：文件、其他相關文件
+# > 如果是要關閉特定 Issue 或 Bug. 填寫 Closes <Issue/Bug id>
+# > 具體參考 https://docs.gitlab.com/ee/user/project/integrations/jira.html
+#
+# 範例
+# <refactor>:重構StatStudent匯入程式</refactor>
+#
+# 背景
+# 修改處理邏輯時，需考慮讀取excel內容與ui互動的方式
+# 與資料庫、Excel檔案過於緊密結合，無法獨立進行測試
+#
+# 問題
+# 商業邏輯分散，大多集中在FrmStatStudent中
+#
+# 解決方案
+# 以domain model方式重新設計StatStudent，並以Command提供UI讀取檔案內容
+# 傳遞參數至domain model處理，將檢查、寫入邏輯按照分類以Validation、Repository
+# 等實作，保持UI部份僅針對excel內容做操作，不涉及StatStudent業務邏輯。
+#
+# 詳細作法
+# 新增AggregateModels資料夾，實作AggregateModel Root，為各Entity聚合根
+# 新增Entities，實作 StatStudent 核心必要各類 domain model
+# 新增Commmands資料夾，實作參數型別，提供Commandhnadler業務處理必要參數
+# 新增Validations資料夾，實作IValidation驗證類別
+# 新增Repository資料夾，實作StatStudent處理資料相關的邏輯
+# 
+# 測試案例
+# test_error_when_university_id_is_null_should_be_throw_exception
+#
+# Closes daily-D0001
+#---    end    ---

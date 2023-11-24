@@ -1,0 +1,38 @@
+#<sql>:(請簡述此次變更範圍、功能、環境等)</sql>
+
+#<Body>
+
+#<Footer>
+#
+#test： 有關測試程式的新增與修改
+#<how to write a good commit message>
+# ---    begin    ---
+# commit log 請遵循以下格式
+# <type>:(<Subject>)</type> {必要}
+# > 根據標籤分類，選擇相對應的標籤，以利日後進行統計
+# > 概述此提交會影響的範圍、功能、環境，以15個中文字說明
+# > 專用術語、功能名稱為英文除外，主要以中文呈現，盡量以被動語態動詞+名詞說明
+# 
+# <Body> {非必要}
+# > 該簽入範圍可於Subject一句話表達時，Body不需額外說明
+# > 具體的修改訊息，填寫完整來龍去脈，減少審核人員覆核時間
+# > 請詳細說明:why what how，幾個問題對應幾個解決方案
+#
+# <footer> {非必要}
+# > 其他連結：文件、其他相關文件
+# > 如果是要關閉特定 Issue 或 Bug. 填寫 Closes <Issue/Bug id>
+# > 具體參考 https://docs.gitlab.com/ee/user/project/integrations/jira.html
+#
+# 範例
+# <tset>:新增學術專長檢誤案例</test>
+#
+# 背景
+# 110學年度技專提供一覽表時，第三行政區出現以前未出現的欄位值
+#
+# 問題
+# 程式碼仍可正常運作，但目前現有測試案例未含此錯誤
+#
+# 解決方案
+# 新增test_throw_expcetion_when_area_address_column_missed
+#
+#---    end    ---
